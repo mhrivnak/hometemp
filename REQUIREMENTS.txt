@@ -1,0 +1,4 @@
+Django==1.4.2
+gviz-api.py==1.8.2
+-e git+git@github.com:mhrivnak/hometemp.git#egg=hometemp-dev
+radiotherm==1.0
