@@ -24,9 +24,9 @@ def home_temps():
     data = thermostat.tstat['raw']
     temp = Decimal(data['temp'])
     if 't_heat' in data:
-        target = Decimal(data['t_heat'])
+        target = Decimal(str(data['t_heat']))
     elif 't_cool' in data:
-        target = Decimal(data['t_cool'])
+        target = Decimal(str(data['t_cool']))
     else:
         target = None
     return temp, target
