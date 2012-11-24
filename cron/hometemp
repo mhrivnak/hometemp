@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+source /home/mhrivnak/pythons/hometemp/bin/activate
+export PYTHONPATH=/home/mhrivnak/dev/tempgraph
+export DJANGO_SETTINGS_MODULE=tempgraph.settings
+
+python -m hometemp.fetch
