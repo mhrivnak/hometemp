@@ -22,7 +22,7 @@ def home_temps():
     """
     thermostat = radiotherm.get_thermostat(getattr(settings, 'THERMOSTAT_IP', None))
     data = thermostat.tstat['raw']
-    temp = Decimal(data['temp'])
+    temp = Decimal(str(data['temp']))
     if 't_heat' in data:
         target = Decimal(str(data['t_heat']))
     elif 't_cool' in data:
