@@ -12,3 +12,11 @@ class Record(models.Model):
             self.outside_temp,
             self.target_temp
         )
+
+    def to_gviz_row(self):
+        return (
+            self.datetime,
+            float(self.home_temp),
+            float(self.target_temp),
+            float(self.outside_temp),
+        )
