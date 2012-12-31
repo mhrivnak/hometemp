@@ -17,7 +17,6 @@ SCHEMA = [
 
 @require_GET
 def graph(request):
-    # TODO finish this
     try:
         start = datetime.fromtimestamp(float(request.REQUEST['start']))
     except KeyError:
